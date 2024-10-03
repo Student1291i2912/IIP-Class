@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 4</title>
+  <style>*{font-family:Roboto,Helvetica,Arial,sans-serif;}body{padding:10px;}</style>
+</head>
+
+<body>
+  <h1>Lab 4</h1>
+  <h3>Student Name: Cameron Dunn</h3>
+<script>
+  // 1 - Create an Array named trees with the following values: Sugar Maple, Red Maple, Red Oak, American Beech, Flowering Dogwood, Eastern Redbud
+
+  const trees = ["Sugar Maple", "Red Maple", "Red Oak", "American Beech", "Flowering Dogwood", "Eastern Redbud"];
+
+  // 2 - Output the Array values using a for loop
+  document.writeln('<br><br>For Loop Output:<br>');
+
+  for(let i = 0; i < trees.length; i++){
+
+      document.writeln(trees[i]);
+
+
+  }
+
+  // 3 - pop() the last value and then output the Array using document.writeln(trees);
+
+trees.pop();
+
+document.writeln('<br>'); //Probably uneccesary, I think I could just put + <br> at the end of all the writeln's but by the time I rea-
+//-lized this I had already put a bunch of theses and don't feel like changing it -Cameron
+document.writeln( trees);
+
+  // 4 - push() the value 'Magnolia' onto the Array and output it using document.writeln(trees);
+trees.push("Magnolia")
+document.writeln("<br>");
+document.writeln(trees);
+
+  // 5 - Output the length of the array using the length property
+  document.writeln("<br>");
+  document.writeln(trees.length);
+  // 6 - Sort the array and then output the all of the values
+  document.writeln("<br>");
+  trees.sort();
+  document.writeln(trees);
+  // 7 - Create an array called numbers with the following values: 4, 8, 2, 9, 10, 12, 3, 5
+
+  const numbers = [4, 8, 2, 9, 10, 12, 3, 5];
+
+
+  // 8 - Use a loop to calculate average. Output the average using document.writeln()
+
+  let int = 0;
+  
+  for(let i = 0; i < numbers.length; i++){
+
+int += numbers[i];
+
+
+  }
+
+  document.writeln("<br>");
+  document.writeln(int / numbers.length);
+
+  // 9 - Use a loop to calculate sum. Output the final sum using document.writeln()
+  let eger = 0;
+  
+  for(let i = 0; i < numbers.length; i++){
+
+eger += numbers[i];
+
+
+  }
+  document.writeln("<br>");
+  document.writeln(eger);
+
+  // 10 - Sort the array and output the values in numbers
+  numbers.sort();
+  document.writeln("<br>");
+  document.writeln(numbers);
+</script>
+</body>
+
+</html>
